@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <button class="scroll-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M18 15L12 9L6 15" stroke="#8B7355" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            
+            <nav class="menu">
+                <button class="menu-item active">
+
+                    <span>Cappuccino</span>
+                </button>
+                
+                <button class="menu-item">
+                    <span>Latte</span>
+                </button>
+                
+                <button class="menu-item">
+                    <span>Americano</span>
+                </button>
+                
+                <button class="menu-item">
+                    <span>Espresso</span>
+                </button>
+                
+                <button class="menu-item">
+                    <span>Flat White</span>
+                </button>
+            </nav>
+            
+            <button class="scroll-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M6 9L12 15L18 9" stroke="#8B7355" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div class="search-bar">
+                    <input type="text" placeholder="Browse your favourite coffee here..">
+                    <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <circle cx="11" cy="11" r="6" stroke="#8B7355" stroke-width="2"/>
+                        <path d="M20 20L16 16" stroke="#8B7355" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                
+                <button class="order-status">
+                    <div class="status-icon">
+                    <img src = order.svg alt="Order Status">
+                    </div>
+                    <span>ORDER STATUS</span>
+                    <span class="badge" id="orderBadge">0</span>
+                </button>
+            </header>
+
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="coffee1.jpg" alt="Cinnamon and Cocoa">
+                    </div>
+                    <h3 class="product-title">Cinnamon and Cocoa</h3>
+                    <div class="product-footer">
+                        <span class="price">125 RUB</span>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="coffee2.jpg" alt="Drizzled with Caramel">
+                    </div>
+                    <h3 class="product-title">Drizzled with Caramel</h3>
+                    <div class="product-footer">
+                        <span class="price">130 RUB</span>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="coffee3.jpg" alt="Bursting Blueberry">
+                    </div>
+                    <h3 class="product-title">Bursting Blueberry</h3>
+                    <div class="product-footer">
+                        <span class="price">120 RUB</span>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="coffee4.jpg" alt="Matcha Delight">
+                    </div>
+                    <h3 class="product-title">Matcha Delight</h3>
+                    <div class="product-footer">
+                        <span class="price"></span>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="coffee5.jpg" alt="Classic Espresso">
+                    </div>
+                    <h3 class="product-title">Classic Espresso</h3>
+                    <div class="product-footer">
+                        <span class="price">79 RUB</span>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="coffee6.jpg" alt="Creamy Latte">
+                    </div>
+                    <h3 class="product-title">Creamy Latte</h3>
+                    <div class="product-footer">
+                        <span class="price">99 RUB</span>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
