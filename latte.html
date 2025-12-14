@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop - Latte</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Левая боковая панель -->
+        <aside class="sidebar">
+            <button class="scroll-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M18 15L12 9L6 15" stroke="#8B7355" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            
+            <nav class="menu">
+                <button class="menu-item" onclick="location.href='capucino.html'">
+                    <span>Cappuccino</span>
+                </button>
+                
+                <button class="menu-item active">
+                    <span>Latte</span>
+                </button>
+                
+                <button class="menu-item" onclick="location.href='americano.html'">
+                    <span>Americano</span>
+                </button>
+                
+                <button class="menu-item" onclick="location.href='espresso.html'">
+                    <span>Espresso</span>
+                </button>
+            </nav>
+            
+            <button class="scroll-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M6 9L12 15L18 9" stroke="#8B7355" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </aside>
+
+        <!-- Основной контент -->
+        <main class="main-content">
+            <!-- Шапка -->
+            <header class="header">
+                <div class="search-bar">
+                    <input type="text" placeholder="Browse your favourite coffee here..">
+                    <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <circle cx="11" cy="11" r="6" stroke="#8B7355" stroke-width="2"/>
+                        <path d="M20 20L16 16" stroke="#8B7355" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                
+                <button class="order-status">
+                    <div class="status-icon">
+                        <img src="images/order.svg" alt="Order Status Icon">
+                    </div>
+                    <span>ORDER STATUS</span>
+                    <span class="badge">0</span>
+                </button>
+            </header>
+
+            <!-- Сетка товаров -->
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <!-- Вставь сюда свою картинку -->
+                        <img src="images/Latte/ClassicLatte.jpg" alt="Classic Latte">
+                    </div>
+                    <h3 class="product-title">Classic Latte</h3>
+                    <div class="product-footer">
+                        <span class="price">₹89</span>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <!-- Вставь сюда свою картинку -->
+                        <img src="images/Latte/VanillaLatte.jpg" alt="Vanilla Latte">
+                    </div>
+                    <h3 class="product-title">Vanilla Latte</h3>
+                    <div class="product-footer">
+                        <span class="price">₹99</span>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <!-- Вставь сюда свою картинку -->
+                        <img src="images/Latte/CaramelLatte.jpg" alt="Caramel Latte">
+                    </div>
+                    <h3 class="product-title">Caramel Latte</h3>
+                    <div class="product-footer">
+                        <span class="price">₹109</span>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <!-- Вставь сюда свою картинку -->
+                        <img src="images/Latte/HazelnutLatte.jpg" alt="Hazelnut Latte">
+                    </div>
+                    <h3 class="product-title">Hazelnut Latte</h3>
+                    <div class="product-footer">
+                        <span class="price">₹109</span>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
