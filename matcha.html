@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop - Matcha Delight</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <nav class="menu">
+                <button class="menu-item" onclick="location.href='capucino.html'">
+                    <span>Cappuccino</span>
+                </button>
+                
+                <button class="menu-item" onclick="location.href='latte.html'">
+                    <span>Latte</span>
+                </button>
+                
+                <button class="menu-item" onclick="location.href='americano.html'">
+                    <span>Americano</span>
+                </button>
+                
+                <button class="menu-item" onclick="location.href='espresso.html'">
+                    <span>Espresso</span>
+                </button>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div class="search-bar">
+                    <input type="text" placeholder="Browse your favourite coffee here..">
+                    <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <circle cx="11" cy="11" r="6" stroke="#8B7355" stroke-width="2"/>
+                        <path d="M20 20L16 16" stroke="#8B7355" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                
+                <button class="order-status">
+                    <div class="status-icon">
+                        <img src="images/order.svg" alt="Order Status Icon">
+                    </div>
+                    <span>ORDER STATUS</span>
+                    <span class="badge">0</span>
+                </button>
+            </header>
+
+            <div class="coffee-detail-content">
+                <a href="capucino.html" class="back-btn">← BACK TO MENU</a>    
+                <h1 class="coffee-title">Matcha Delight</h1>
+                
+                <div class="divider"></div>
+                
+                <div class="options-section">
+                    <div class="option-group">
+                        <h3>SIZE:</h3>
+                        <div class="option-btns">
+                            <button class="size-btn active" data-value="short">SHORT</button>
+                            <button class="size-btn" data-value="tall">TALL</button>
+                            <button class="size-btn" data-value="grande">GRANDE</button>
+                            <button class="size-btn" data-value="venti">VENTI</button>
+                        </div>
+                    </div>
+                    
+                    <div class="option-group">
+                        <h3>EXTRA:</h3>
+                        <div class="option-btns">
+                            <button class="extra-btn" data-value="sugar">SUGAR</button>
+                            <button class="extra-btn" data-value="milk">MILK</button>
+                        </div>
+                    </div>
+                    
+                    <div class="option-group">
+                        <h3>MILK TYPE:</h3>
+                        <div class="option-btns">
+                            <button class="milk-btn active" data-value="oat">OAT MILK</button>
+                            <button class="milk-btn" data-value="soy">SOY MILK</button>
+                            <button class="milk-btn" data-value="almond">ALMOND MILK</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="divider"></div>
+                <div class="price-quantity">
+                    <div class="price-tag">RUB109</div>
+                    <div class="quantity-control">
+                        <button class="qty-btn minus">−</button>
+                        <span class="qty-display">1</span>
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                </div>
+                
+                <button class="order-btn">PLACE ORDER</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
