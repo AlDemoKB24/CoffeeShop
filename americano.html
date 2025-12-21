@@ -7,115 +7,86 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <aside class="sidebar">
-            <button class="scroll-btn">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M18 15L12 9L6 15" stroke="#8B7355" stroke-width="2" stroke-linecap="round"/>
+<div class="container">
+    <aside class="sidebar">
+        <button class="scroll-btn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M18 15L12 9L6 15" stroke="#8B7355" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
+        <nav class="menu">
+            <button class="menu-item" onclick="location.href='capucino.html'"><span>Cappuccino</span></button>
+            <button class="menu-item" onclick="location.href='latte.html'"><span>Latte</span></button>
+            <button class="menu-item active"><span>Americano</span></button>
+            <button class="menu-item" onclick="location.href='espresso.html'"><span>Espresso</span></button>
+        </nav>
+        <button class="scroll-btn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M6 9L12 15L18 9" stroke="#8B7355" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
+    </aside>
+
+    <main class="main-content">
+        <header class="header">
+            <div class="search-bar">
+                <input id="searchInput" type="text" placeholder="Browse your favourite coffee here..">
+                <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="11" cy="11" r="6" stroke="#8B7355" stroke-width="2"/>
+                    <path d="M20 20L16 16" stroke="#8B7355" stroke-width="2" stroke-linecap="round"/>
                 </svg>
+            </div>
+            <button class="order-status">
+                <div class="status-icon"><img src="images/order.svg" alt="Order Status Icon"></div>
+                <span>ORDER STATUS</span>
+                <span class="badge" id="orderBadge">0</span>
             </button>
-            
-            <nav class="menu">
-                <button class="menu-item" onclick="location.href='capucino.html'">
-                    <span>Cappuccino</span>
-                </button>
-                
-                <button class="menu-item" onclick="location.href='latte.html'">
-                    <span>Latte</span>
-                </button>
-                
-                <button class="menu-item active">
-                    <span>Americano</span>
-                </button>
-                
-                <button class="menu-item" onclick="location.href='espresso.html'">
-                    <span>Espresso</span>
-                </button>
-            </nav>
-            
-            <button class="scroll-btn">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M6 9L12 15L18 9" stroke="#8B7355" stroke-width="2" stroke-linecap="round"/>
-                </svg>
-            </button>
-        </aside>
+        </header>
 
-        <main class="main-content">
-            <header class="header">
-                <div class="search-bar">
-                    <input type="text" placeholder="Browse your favourite coffee here..">
-                    <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <circle cx="11" cy="11" r="6" stroke="#8B7355" stroke-width="2"/>
-                        <path d="M20 20L16 16" stroke="#8B7355" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                </div>
-                
-                <button class="order-status">
-                    <div class="status-icon">
-                        <img src="images/order.svg" alt="Order Status Icon">
-                    </div>
-                    <span>ORDER STATUS</span>
-                    <span class="badge">0</span>
-                </button>
-            </header>
-
-            <div class="products-grid">
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/Americano/ClassicAmericano.jpg" alt="Classic Americano">
-                    </div>
-                    <h3 class="product-title">Classic Americano</h3>
-                    <div class="product-footer">
-                        <span class="price">79 RUB</span>
-                        <button class="add-btn">+</button>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/Americano/IcedAmericano.jpg" alt="Iced Americano">
-                    </div>
-                    <h3 class="product-title">Iced Americano</h3>
-                    <div class="product-footer">
-                        <span class="price">89 RUB</span>
-                        <button class="add-btn">+</button>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/Americano/LongBlack.jpg" alt="Long Black">
-                    </div>
-                    <h3 class="product-title">Long Black</h3>
-                    <div class="product-footer">
-                        <span class="price">85 RUB</span>
-                        <button class="add-btn">+</button>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/Americano/RedEye.jpg" alt="Red Eye">
-                    </div>
-                    <h3 class="product-title">Red Eye</h3>
-                    <div class="product-footer">
-                        <span class="price">95 RUB</span>
-                        <button class="add-btn">+</button>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/Americano/DoubleAmericano.jpg" alt="Double Americano">
-                    </div>
-                    <h3 class="product-title">Double Americano</h3>
-                    <div class="product-footer">
-                        <span class="price">99 RUB</span>
-                        <button class="add-btn">+</button>
-                    </div>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image"><img src="images/Americano/ClassicAmericano.jpg" alt="Classic Americano"></div>
+                <h3 class="product-title">Classic Americano</h3>
+                <div class="product-footer">
+                    <span class="price">79 RUB</span>
+                    <button class="add-btn" onclick="location.href='coffee-detail.html?coffee=classic-americano'">+</button>
                 </div>
             </div>
-        </main>
-    </div>
+            <div class="product-card">
+                <div class="product-image"><img src="images/Americano/IcedAmericano.jpg" alt="Iced Americano"></div>
+                <h3 class="product-title">Iced Americano</h3>
+                <div class="product-footer">
+                    <span class="price">89 RUB</span>
+                    <button class="add-btn" onclick="location.href='coffee-detail.html?coffee=iced-americano'">+</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="images/Americano/LongBlack.jpg" alt="Long Black"></div>
+                <h3 class="product-title">Long Black</h3>
+                <div class="product-footer">
+                    <span class="price">85 RUB</span>
+                    <button class="add-btn" onclick="location.href='coffee-detail.html?coffee=long-black'">+</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="images/Americano/RedEye.jpg" alt="Red Eye"></div>
+                <h3 class="product-title">Red Eye</h3>
+                <div class="product-footer">
+                    <span class="price">95 RUB</span>
+                    <button class="add-btn" onclick="location.href='coffee-detail.html?coffee=red-eye'">+</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><img src="images/Americano/DoubleAmericano.jpg" alt="Double Americano"></div>
+                <h3 class="product-title">Double Americano</h3>
+                <div class="product-footer">
+                    <span class="price">99 RUB</span>
+                    <button class="add-btn" onclick="location.href='coffee-detail.html?coffee=double-americano'">+</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+<script src="orderManager.js"></script>
 </body>
 </html>

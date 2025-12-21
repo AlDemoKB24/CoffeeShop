@@ -14,14 +14,12 @@
                 <path d="M18 15L12 9L6 15" stroke="#8B7355" stroke-width="2" stroke-linecap="round"/>
             </svg>
         </button>
-
         <nav class="menu">
             <button class="menu-item" onclick="location.href='capucino.html'"><span>Cappuccino</span></button>
             <button class="menu-item active"><span>Latte</span></button>
             <button class="menu-item" onclick="location.href='americano.html'"><span>Americano</span></button>
             <button class="menu-item" onclick="location.href='espresso.html'"><span>Espresso</span></button>
         </nav>
-
         <button class="scroll-btn">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path d="M6 9L12 15L18 9" stroke="#8B7355" stroke-width="2" stroke-linecap="round"/>
@@ -32,16 +30,14 @@
     <main class="main-content">
         <header class="header">
             <div class="search-bar">
-                <input type="text" placeholder="Browse your favourite coffee here..">
+                <input id="searchInput" type="text" placeholder="Browse your favourite coffee here..">
                 <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <circle cx="11" cy="11" r="6" stroke="#8B7355" stroke-width="2"/>
                     <path d="M20 20L16 16" stroke="#8B7355" stroke-width="2" stroke-linecap="round"/>
                 </svg>
             </div>
             <button class="order-status">
-                <div class="status-icon">
-                    <img src="images/order.svg" alt="Order Status Icon">
-                </div>
+                <div class="status-icon"><img src="images/order.svg" alt="Order Status Icon"></div>
                 <span>ORDER STATUS</span>
                 <span class="badge" id="orderBadge">0</span>
             </button>
@@ -49,68 +45,40 @@
 
         <div class="products-grid">
             <div class="product-card">
-                <div class="product-image">
-                    <img src="images/Latte/ClassicLatte.jpg" alt="Classic Latte">
-                </div>
+                <div class="product-image"><img src="images/Latte/ClassicLatte.jpg" alt="Classic Latte"></div>
                 <h3 class="product-title">Classic Latte</h3>
                 <div class="product-footer">
-                    <span class="price">₹89</span>
-                    <button class="add-btn"
-                            data-id="classic-latte"
-                            data-name="Classic Latte"
-                            data-price="89"
-                            data-image="images/Latte/ClassicLatte.jpg">+</button>
+                    <span class="price">89 RUB</span>
+                    <button class="add-btn" onclick="location.href='coffee-detail.html?coffee=classic-latte'">+</button>
                 </div>
             </div>
-
             <div class="product-card">
-                <div class="product-image">
-                    <img src="images/Latte/VanillaLatte.jpg" alt="Vanilla Latte">
-                </div>
+                <div class="product-image"><img src="images/Latte/VanillaLatte.jpg" alt="Vanilla Latte"></div>
                 <h3 class="product-title">Vanilla Latte</h3>
                 <div class="product-footer">
-                    <span class="price">₹99</span>
-                    <button class="add-btn"
-                            data-id="vanilla-latte"
-                            data-name="Vanilla Latte"
-                            data-price="99"
-                            data-image="images/Latte/VanillaLatte.jpg">+</button>
+                    <span class="price">99 RUB</span>
+                    <button class="add-btn" onclick="location.href='coffee-detail.html?coffee=vanilla-latte'">+</button>
                 </div>
             </div>
-
             <div class="product-card">
-                <div class="product-image">
-                    <img src="images/Latte/CaramelLatte.jpg" alt="Caramel Latte">
-                </div>
+                <div class="product-image"><img src="images/Latte/CaramelLatte.jpg" alt="Caramel Latte"></div>
                 <h3 class="product-title">Caramel Latte</h3>
                 <div class="product-footer">
-                    <span class="price">₹109</span>
-                    <button class="add-btn"
-                            data-id="caramel-latte"
-                            data-name="Caramel Latte"
-                            data-price="109"
-                            data-image="images/Latte/CaramelLatte.jpg">+</button>
+                    <span class="price">109 RUB</span>
+                    <button class="add-btn" onclick="location.href='coffee-detail.html?coffee=caramel-latte'">+</button>
                 </div>
             </div>
-
             <div class="product-card">
-                <div class="product-image">
-                    <img src="images/Latte/HazelnutLatte.jpg" alt="Hazelnut Latte">
-                </div>
+                <div class="product-image"><img src="images/Latte/HazelnutLatte.jpg" alt="Hazelnut Latte"></div>
                 <h3 class="product-title">Hazelnut Latte</h3>
                 <div class="product-footer">
-                    <span class="price">₹109</span>
-                    <button class="add-btn"
-                            data-id="hazelnut-latte"
-                            data-name="Hazelnut Latte"
-                            data-price="109"
-                            data-image="images/Latte/HazelnutLatte.jpg">+</button>
+                    <span class="price">109 RUB</span>
+                    <button class="add-btn" onclick="location.href='coffee-detail.html?coffee=hazelnut-latte'">+</button>
                 </div>
             </div>
         </div>
     </main>
 </div>
-
-<script src="script.js"></script>
+<script src="orderManager.js"></script>
 </body>
 </html>

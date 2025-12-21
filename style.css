@@ -314,6 +314,11 @@ body {
     .products-grid {
         grid-template-columns: 1fr;
     }
+    
+    .search-bar{
+        max-width: 500px;
+        flex: 1
+    }
 }
 
 .coffee-detail-content {
@@ -500,7 +505,14 @@ body {
     .option-btns {
         flex-direction: column;
     }
+    .scroll-btn{
+        display: none;
+    }
     
+    .menu{
+        justify-content: center;
+    }
+
     .size-btn,
     .extra-btn,
     .milk-btn {
@@ -538,6 +550,10 @@ body {
     .menu-item {
         width: 45%;
         margin: 5px;
+    }
+
+    .search-bar{
+        width: 300px;
     }
 }
 .simple-order-page {

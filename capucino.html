@@ -14,14 +14,12 @@
                 <path d="M18 15L12 9L6 15" stroke="#8B7355" stroke-width="2" stroke-linecap="round"/>
             </svg>
         </button>
-
         <nav class="menu">
             <button class="menu-item active"><span>Cappuccino</span></button>
             <button class="menu-item" onclick="location.href='latte.html'"><span>Latte</span></button>
             <button class="menu-item" onclick="location.href='americano.html'"><span>Americano</span></button>
             <button class="menu-item" onclick="location.href='espresso.html'"><span>Espresso</span></button>
         </nav>
-
         <button class="scroll-btn">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path d="M6 9L12 15L18 9" stroke="#8B7355" stroke-width="2" stroke-linecap="round"/>
@@ -32,16 +30,14 @@
     <main class="main-content">
         <header class="header">
             <div class="search-bar">
-                <input type="text" placeholder="Browse your favourite coffee here..">
+                <input id="searchInput" type="text" placeholder="Browse your favourite coffee here..">
                 <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <circle cx="11" cy="11" r="6" stroke="#8B7355" stroke-width="2"/>
                     <path d="M20 20L16 16" stroke="#8B7355" stroke-width="2" stroke-linecap="round"/>
                 </svg>
             </div>
             <button class="order-status">
-                <div class="status-icon">
-                    <img src="images/order.svg" alt="Order Status Icon">
-                </div>
+                <div class="status-icon"><img src="images/order.svg" alt="Order Status Icon"></div>
                 <span>ORDER STATUS</span>
                 <span class="badge" id="orderBadge">0</span>
             </button>
@@ -49,53 +45,40 @@
 
         <div class="products-grid">
             <div class="product-card">
-                <div class="product-image">
-                    <img src="images/Cappuccino/CocoCinam.jpg" alt="Cinnamon and Cocoa">
-                </div>
+                <div class="product-image"><img src="images/Cappuccino/CocoCinam.jpg" alt="Cinnamon and Cocoa"></div>
                 <h3 class="product-title">Cinnamon and Cocoa</h3>
                 <div class="product-footer">
                     <span class="price">159 RUB</span>
-
-                    <button class="add-btn" onclick="location.href='cinnamon-cocoa.html'">+</button>
+                    <button class="add-btn" onclick="location.href='coffee-detail.html?coffee=cinnamon-cocoa'">+</button>
                 </div>
             </div>
-
             <div class="product-card">
-                <div class="product-image">
-                    <img src="images/Cappuccino/DrizCar.jpg" alt="Drizzled with Caramel">
-                </div>
+                <div class="product-image"><img src="images/Cappuccino/DrizCar.jpg" alt="Drizzled with Caramel"></div>
                 <h3 class="product-title">Drizzled with Caramel</h3>
                 <div class="product-footer">
                     <span class="price">129 RUB</span>
-                    <button class="add-btn" onclick="location.href='caramel-drizzle.html'">+</button>
+                    <button class="add-btn" onclick="location.href='coffee-detail.html?coffee=caramel-drizzle'">+</button>
                 </div>
             </div>
-
             <div class="product-card">
-                <div class="product-image">
-                    <img src="images/Cappuccino/Burst.jpg" alt="Bursting Blueberry">
-                </div>
+                <div class="product-image"><img src="images/Cappuccino/Burst.jpg" alt="Bursting Blueberry"></div>
                 <h3 class="product-title">Bursting Blueberry</h3>
                 <div class="product-footer">
                     <span class="price">119 RUB</span>
-                    <button class="add-btn" onclick="location.href='bursting-blueberry.html'">+</button>
+                    <button class="add-btn" onclick="location.href='coffee-detail.html?coffee=bursting-blueberry'">+</button>
                 </div>
             </div>
-
             <div class="product-card">
-                <div class="product-image">
-                    <img src="images/Cappuccino/matcha.jpg" alt="Matcha Delight">
-                </div>
+                <div class="product-image"><img src="images/Cappuccino/matcha.jpg" alt="Matcha Delight"></div>
                 <h3 class="product-title">Matcha Delight</h3>
                 <div class="product-footer">
                     <span class="price">109 RUB</span>
-                <button class="add-btn" onclick="location.href='matcha.html'">+</button>
+                    <button class="add-btn" onclick="location.href='coffee-detail.html?coffee=matcha'">+</button>
                 </div>
             </div>
         </div>
     </main>
 </div>
-
-<script src="script.js"></script>
+<script src="orderManager.js"></script>
 </body>
 </html>
